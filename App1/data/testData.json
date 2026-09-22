@@ -1,0 +1,14 @@
+{
+  "appName": "App1",
+  "url": "https://qe101.staples.com",
+  "searchTerm": "pencil",
+  "expectedResult": "Featured Products",
+  "modalTimeout": 10000,
+  "product": {
+    "title": "Ticonderoga The World's Best Pencil Pre-Sharpened Wooden Pencil",
+    "leadSize": "2.2mm",
+    "packCount": "18/Pack",
+    "price": "$7.49"
+  }
+}
+

@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Test Results & Reports
+test-results/
+playwright-report/
+reports/
+
+# Persistent Browser Profiles & Cache
+.browser-profile/
+.chrome-profile/
+.edge-profile/
+
+# Playwright BDD Generated Files
+.features-gen/
+
+# Environment & Credentials
+.env
+
+# System & Editor
+Thumbs.db
+.DS_Store
+

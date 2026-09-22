@@ -1,0 +1,14 @@
+{
+  "appName": "App2",
+  "url": "https://qe101.staples.com",
+  "searchTerm": "pen",
+  "expectedResult": "Featured Products",
+  "modalTimeout": 10000,
+  "product": {
+    "title": "Pentel Alloy Roller Ball Retractable Pen",
+    "pointType": "Medium Point",
+    "inkColor": "Black Ink",
+    "price": "$8.19"
+  }
+}
+

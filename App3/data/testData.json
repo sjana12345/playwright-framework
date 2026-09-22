@@ -1,0 +1,14 @@
+{
+  "appName": "App3",
+  "url": "https://qe101.staples.com",
+  "searchTerm": "paper",
+  "expectedResult": "Featured Products",
+  "modalTimeout": 10000,
+  "product": {
+    "title": "TRU RED Copy Paper, 8.5\" x 11\"",
+    "paperWeight": "20 lbs.",
+    "sheetCount": "500/Ream",
+    "price": "$9.99"
+  }
+}
+

@@ -1,0 +1,79 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Debug index.ts",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/index.ts",
+            "runtimeArgs": [
+                "--import",
+                "tsx"
+            ],
+            "console": "integratedTerminal",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "name": "Debug Current TS File",
+            "type": "node",
+            "request": "launch",
+            "program": "${file}",
+            "runtimeArgs": [
+                "--import",
+                "tsx"
+            ],
+            "console": "integratedTerminal",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "name": "Debug Playwright BDD (All)",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm test"
+        },
+        {
+            "name": "Debug App1 & App3",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run test:app1-app3"
+        },
+        {
+            "name": "Debug App1",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run test:app1"
+        },
+        {
+            "name": "Debug App2",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run test:app2"
+        },
+        {
+            "name": "Debug App3",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run test:app3"
+        },
+        {
+            "name": "Debug Playwright Test",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/node_modules/@playwright/test/cli.js",
+            "args": [
+                "test"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "sourceMaps": true,
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ]
+}

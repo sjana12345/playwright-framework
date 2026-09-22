@@ -1,0 +1,34 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "bddgen": "bddgen",
+    "test": "bddgen && playwright test",
+    "test:app1": "bddgen && playwright test --project=App1",
+    "test:app2": "bddgen && playwright test --project=App2",
+    "test:app3": "bddgen && playwright test --project=App3",
+    "test:app1-app3": "bddgen && playwright test --project=App1 --project=App3",
+    "test:api": "bddgen && playwright test --grep @api",
+    "compare:bulk": "tsx scripts/run-bulk-comparison.ts",
+    "generate:csv": "tsx scripts/generate-sample-csv.ts",
+    "test:headed": "bddgen && playwright test --headed",
+    "test:debug": "bddgen && playwright test --debug",
+    "profile:list": "tsx scripts/list-profiles.ts",
+    "browser:debug": "cmd /c start chrome.exe --remote-debugging-port=9222 --profile-directory=Default",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "@types/node": "latest",
+    "playwright-bdd": "latest",
+    "tsx": "^4.23.15",
+    "typescript": "latest"
+  }
+}
